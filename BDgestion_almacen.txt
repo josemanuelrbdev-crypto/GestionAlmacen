@@ -1,0 +1,18 @@
+CRUD EN ANDROID STUDIO LENGUAJE KOTLIN CON MSYSQL
+====================================================
+BASE DE DATOS
+CREATE DATABASE gestion_almacen;
+USE gestion_almacen;
+
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+-- Insertamos un usuario de prueba (puedes usar contraseñas encriptadas luego)
+INSERT INTO usuarios (usuario, password) VALUES ('admin', '1234');
