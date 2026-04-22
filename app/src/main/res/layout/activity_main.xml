@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GESTIÓN DE ALMACÉN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnIrCapturar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Capturar Nuevo Producto"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnIrVer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Ver Inventario"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnIrActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Actualizar / Eliminar"
+        android:backgroundTint="#FF9800"/>
+
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cerrar Sesión"
+        android:backgroundTint="#FF5252" />
+
+</LinearLayout>
