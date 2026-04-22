@@ -4,44 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="preview-image.png" />
+    <link rel="icon" type="image/png" href="icono-app.png" />
 
     <title>Gestión Almacén | Descarga Directa</title>
-    <meta
-            name="description"
-            content="Descarga la App nativa de Gestión de Almacén para Android."
-    />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gestionalmacenapp.whf.bz/" />
+    
+    <meta name="description" content="Descarga la App nativa de Gestión de Almacén para Android." />
     <meta property="og:title" content="Gestión Almacén - Descarga la App" />
-    <meta
-            property="og:description"
-            content="Optimiza tu inventario con nuestra solución móvil nativa. Rápida y eficiente."
-    />
+    <meta property="og:description" content="Optimiza tu inventario con nuestra solución móvil nativa." />
+    <meta property="og:image" content="icono-app.png" />
 
-    <meta
-            property="og:image"
-            content="https://gestionalmacenapp.whf.bz/preview-image.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gestión Almacén - Descarga la App" />
-    <meta
-            name="twitter:description"
-            content="Optimiza tu inventario con nuestra solución móvil nativa."
-    />
-    <meta
-            name="twitter:image"
-            content="https://tse3.mm.bing.net/th/id/OIP.KdpNfq-38O7FOIIVvIOLjwHaFW?rs=1&pid=ImgDetMain&o=7&rm=3"
-    />
-
-    <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-            rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 
     <style>
         :root {
@@ -64,6 +36,7 @@
         .container {
           background: rgba(255, 255, 255, 0.1);
           backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
           border: 1px solid rgba(255, 255, 255, 0.2);
           padding: 40px;
           border-radius: 20px;
@@ -74,10 +47,10 @@
         }
 
         .app-icon {
-          width: 80px;
-          height: 80px;
+          width: 100px; /* Un poco más grande para que destaque */
+          height: 100px;
           background: #fff;
-          border-radius: 18px;
+          border-radius: 22px;
           margin: 0 auto 20px;
           display: flex;
           align-items: center;
@@ -87,23 +60,13 @@
         }
 
         .app-icon img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          width: 90%; /* Ajuste para que no toque los bordes del cuadro blanco */
+          height: 90%;
+          object-fit: contain;
         }
 
-        h1 {
-          font-weight: 600;
-          margin-bottom: 10px;
-          font-size: 1.8rem;
-        }
-        p {
-          font-weight: 300;
-          font-size: 0.95rem;
-          opacity: 0.9;
-          line-height: 1.6;
-          margin-bottom: 30px;
-        }
+        h1 { font-weight: 600; margin-bottom: 10px; font-size: 1.8rem; }
+        p { font-weight: 300; font-size: 0.95rem; opacity: 0.9; line-height: 1.6; margin-bottom: 30px; }
 
         .btn {
           display: inline-block;
@@ -114,6 +77,7 @@
           border-radius: 50px;
           font-weight: 600;
           transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         .btn:hover {
@@ -122,17 +86,13 @@
           color: #fff;
         }
 
-        .version {
-          margin-top: 25px;
-          font-size: 0.8rem;
-          opacity: 0.6;
-        }
+        .version { margin-top: 25px; font-size: 0.8rem; opacity: 0.7; }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="app-icon">
-        <img src="icono-app.png" alt="Logo Gestión Almacén" style="max-width: 150px; border-radius: 20px;">
+        <img src="icono-app.png" alt="Logo Gestión Almacén">
     </div>
 
     <h1>Gestión Almacén</h1>
