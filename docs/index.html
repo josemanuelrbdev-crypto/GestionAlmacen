@@ -46,23 +46,24 @@
           text-align: center;
         }
 
+        /* AJUSTE PARA QUE EL ICONO SE VEA GRANDE */
         .app-icon {
-          width: 100px; /* Un poco más grande para que destaque */
-          height: 100px;
+          width: 120px;         /* Aumentamos el tamaño del cuadro */
+          height: 120px;
           background: #fff;
-          border-radius: 22px;
+          border-radius: 25px;
           margin: 0 auto 20px;
           display: flex;
           align-items: center;
           justify-content: center;
-          overflow: hidden;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          overflow: hidden;     /* Recorta el exceso de la imagen */
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
         }
 
         .app-icon img {
-          width: 90%; /* Ajuste para que no toque los bordes del cuadro blanco */
-          height: 90%;
-          object-fit: contain;
+          width: 140%;          /* Hacemos la imagen más grande que el cuadro */
+          height: 140%;         /* Esto elimina los bordes blancos de la imagen original */
+          object-fit: cover;    /* Expande el logo para que llene todo el espacio */
         }
 
         h1 { font-weight: 600; margin-bottom: 10px; font-size: 1.8rem; }
